@@ -3,12 +3,12 @@ import "firebase/storage";
 import "firebase/firestore";
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyCIiYfZ5HIz6DfvHrWlWIiAILfHl_auWbU",
-  authDomain: "firegram-60ba3.firebaseapp.com",
-  projectId: "firegram-60ba3",
-  storageBucket: "firegram-60ba3.appspot.com",
-  messagingSenderId: "258087482030",
-  appId: "1:258087482030:web:45d51a95a3dfb263b8f33f",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_AUTH_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
